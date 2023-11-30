@@ -3,12 +3,12 @@ package com.example.fitnessapp.fragments
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.CountDownTimer
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.fitnessapp.R
 import com.example.fitnessapp.adapters.ExerciseModel
@@ -95,6 +95,7 @@ class ExerciseFragment : Fragment() {
 
     }
 
+    // ONe
     private fun setExerciseType(exerciseModel: ExerciseModel){
         if(exerciseModel.time.startsWith("x")){
             timer?.cancel()

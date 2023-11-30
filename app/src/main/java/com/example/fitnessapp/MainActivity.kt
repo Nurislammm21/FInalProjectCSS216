@@ -1,9 +1,8 @@
 package com.example.fitnessapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.fragment.app.activityViewModels
+import androidx.appcompat.app.AppCompatActivity
 import com.example.fitnessapp.databinding.ActivityMainBinding
 import com.example.fitnessapp.fragments.DaysFragment
 import com.example.fitnessapp.utils.FragmentManager
@@ -20,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         FragmentManager.setFragment(DaysFragment.newInstance(),this)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if(FragmentManager.currentFragment is DaysFragment) super.onBackPressed()
         else FragmentManager.setFragment(DaysFragment.newInstance(), this)
-
 
 
     }
