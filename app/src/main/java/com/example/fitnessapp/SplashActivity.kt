@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
+
+    //intents
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -18,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-            startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+                startActivity(Intent(this@SplashActivity,MainActivity::class.java))
             }
 
         }.start()
