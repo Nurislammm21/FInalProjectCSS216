@@ -44,6 +44,8 @@ class DaysAdapter(var listener : Listener) : ListAdapter<DayModel,DaysAdapter.Da
         }
 
     }
+
+    // need new interface
     interface Listener{
         fun onClick(day : DayModel)
     }
